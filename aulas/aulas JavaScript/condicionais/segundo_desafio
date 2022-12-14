@@ -1,0 +1,19 @@
+const precoEtanol = 5.79;
+const precoGasolina = 6.66;
+const KmPorLitros = 10;
+const distanciaEmKm = 100;
+const TipoCombustivel = 'Gasolina';
+
+const litrosConsumidos = distanciaEmKm / KmPorLitros;
+
+
+
+if (TipoCombustivel === 'Etanol') {
+    const valorgasto = litrosConsumidos * precoEtanol;
+    console.log(valorgasto.toFixed(2));
+} else {
+    const valorgasto = litrosConsumidos * precoGasolina;
+    console.log(valorgasto.toFixed(2));
+}
+
+
